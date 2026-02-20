@@ -1,0 +1,21 @@
+name: DamageIndicators
+version: '1.0-SNAPSHOT'
+main: org.emi.DamageIndicators
+api-version: '1.21'
+author: "igemily"
+description: "A simple plugin that shows damage indicators using Text Display entities."
+# TODO: Folia support.
+#folia-supported: true
+commands:
+  damageindicators:
+    description: "Shows damage indicators when you hit entities."
+    usage: "Usage: /damageindicators <on|off>"
+    permission: damageindicators.toggle
+    permission-message: "You do not have permission to use this command >:3"
+permissions:
+  damageindicators.toggle:
+    description: "Allows the use of the /damageindicators command"
+    default: op
+  damageindicators.*:
+    description: Grants all other permissions
+    default: false
